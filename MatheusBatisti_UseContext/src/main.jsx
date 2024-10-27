@@ -6,6 +6,7 @@ import Home from './routes/Home.jsx'
 import Contact from './routes/Contact.jsx'
 
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
+import { ThemeProvider } from './context/ThemeContext.jsx'
 const router = createBrowserRouter([
   {
     path: '/',
@@ -19,6 +20,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router}/>  
+    <ThemeProvider>
+    <RouterProvider router={router}/> 
+    </ThemeProvider> 
   </StrictMode>,
 )

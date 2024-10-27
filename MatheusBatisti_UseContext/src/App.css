@@ -13,3 +13,10 @@
   align-items: center;
   gap: 3rem;
 }
+
+
+.dark-theme,
+.dark-theme a {
+  background-color: #333;
+  color: #fff;
+}
