@@ -15,5 +15,17 @@
 * (2) brakepoint do git, para commitar as informações
 
 6 - Inicio do Roteamento em React com react router dom 
+    . Criar minhas rotas, Definiar um arquivo para cada Rota
+    . Importar do React Router Dom o createBrowserRouter e RouterProvider
     . Configuar meu Main.jsx com as seguintes demandas
       . Criar uma variavel com as rotas definidas
+      .passando o O Path,
+      .Element
+      .Children
+    .Concluir o caminho de cada rota dentro da variavel com o path e element corretamente
+    .Remoção do <App/> e adicionado dentro <StrickMode>o router={router}</StrickMode>, com isso nossa paginação não fica estativa
+    no componente App
+    . Adicionando no App o comoponente <Outlet/> para a navegação dasa paginas via url ou caminho
+
+
+* (3) brakepoint do git, para commitar as informações
