@@ -27,7 +27,7 @@ const router = createBrowserRouter([
       {path: '/trash', element: <Trash />},
     ]   
     }
-])
+])  
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

@@ -20,6 +20,7 @@ import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import { Link } from "react-router-dom";
 import { valueDrawerFirst, valueDrawerSecond } from '../../data/data';
+import Button from '../Button/Button';
 
 const drawerWidth = 240;
 
@@ -114,9 +115,9 @@ export default function MiniDrawer() {
   };
 
   return (
-    <Box sx={{ display: 'flex' }}>
+    <><Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar sx={{ backgroundColor: '#000' }} position="fixed" open={open}>
+      <AppBar sx={{ backgroundColor: '#000', height: '7.4vh' }} position="fixed" open={open}>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -137,7 +138,11 @@ export default function MiniDrawer() {
           </Typography>
         </Toolbar>
       </AppBar>
-      <Drawer variant="permanent" open={open}>
+      <Drawer sx={{
+        '& .MuiDrawer-paper': {
+      backgroundColor: '#fff',
+      }}} variant="permanent" open={open}>
+ 
         <DrawerHeader>
           <IconButton onClick={handleDrawerClose}>
             {theme.direction === 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}
@@ -147,7 +152,7 @@ export default function MiniDrawer() {
         <List>
           {valueDrawerFirst.map((text, index) => (
             <ListItem key={index} disablePadding sx={{ display: 'block' }}>
-              <Link style={{color: '#000'}} to={text.routerPath}>
+              <Link style={{ color: '#000' }} to={text.routerPath}>
                 <ListItemButton
                   sx={[
                     {
@@ -180,7 +185,7 @@ export default function MiniDrawer() {
                   >
                     {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
                   </ListItemIcon>
-                  <ListItemText
+                  <ListItemText 
                     primary={text.nome}
                     sx={[
                       open
@@ -190,8 +195,7 @@ export default function MiniDrawer() {
                         : {
                           opacity: 0,
                         },
-                    ]}
-                  />
+                    ]} />
                 </ListItemButton>
               </Link>
             </ListItem>
@@ -201,7 +205,7 @@ export default function MiniDrawer() {
         <List>
           {valueDrawerSecond.map((text, index) => (
             <ListItem key={index} disablePadding sx={{ display: 'block' }}>
-              <Link style={{color: '#000'}} to={text.routerPath}>
+              <Link style={{ color: '#000' }} to={text.routerPath}>
                 <ListItemButton
                   sx={[
                     {
@@ -244,15 +248,13 @@ export default function MiniDrawer() {
                         : {
                           opacity: 0,
                         },
-                    ]}
-                  />
+                    ]} />
                 </ListItemButton>
               </Link>
             </ListItem>
           ))}
-        </List>
+        </List>    
       </Drawer>
-      <DrawerHeader />
-    </Box>
+    </Box><DrawerHeader /></>
   );
 }

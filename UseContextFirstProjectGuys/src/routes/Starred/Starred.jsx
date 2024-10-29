@@ -2,7 +2,7 @@ import React from 'react'
 
 const Starred = () => {
   return (
-    <div>
+    <div className='contentPage'>
       <h1>Pagina Starred</h1>
     </div>
   )

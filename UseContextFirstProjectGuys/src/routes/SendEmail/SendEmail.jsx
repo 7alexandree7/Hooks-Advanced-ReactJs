@@ -2,7 +2,7 @@ import React from 'react'
 
 const SendEmail = () => {
   return (
-    <div>
+    <div className='contentPage'>
       <h1>Pagina Send Email</h1>
     </div>
   )

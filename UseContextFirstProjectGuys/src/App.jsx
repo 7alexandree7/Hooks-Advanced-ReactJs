@@ -7,22 +7,12 @@ import { Outlet } from "react-router-dom";
 function App() {
 
   return (
-    <>
-
-      <Box sx={
-        {
-          backgroundColor: '#fff',
-          height: '100vh',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          maxWidth: '80%',
-          margin: 'auto'
-        }}>
+    <div>        
         <MiniDrawer />
         <Outlet />
-      </Box>
-    </>
+        
+    </div>
+
   )
 }
 
