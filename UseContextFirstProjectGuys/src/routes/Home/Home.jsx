@@ -1,12 +1,13 @@
 import React from 'react'
-import { Box, Button, Typography } from '@mui/material'
+import Button from '../../components/Button/Button'
 
 const Home = () => {
 
   return (
 
     <div className='contentPage'>
-      <h1>Home</h1>
+      <h1>Pagina Home</h1>
+      <Button />
     </div>
   )
 }

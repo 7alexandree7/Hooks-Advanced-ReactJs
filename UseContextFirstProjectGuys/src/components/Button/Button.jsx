@@ -3,7 +3,7 @@ import React from 'react'
 const Button = () => {
   return (
     <div>
-      <button style={{color: 'red'}}>Change Background</button>
+      <button className='btnGlobal' >Change Background</button>
     </div>
   )
 }
