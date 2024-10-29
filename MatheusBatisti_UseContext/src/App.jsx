@@ -6,13 +6,14 @@ import './App.css'
 
 function App() {
 
-  const {theme} = useContext(ThemeContext)
+  const { theme } = useContext(ThemeContext)
 
   return (
-    <div className={`app ${theme === 'dark' ? 'dark-theme' : ''}`}>
-      <Outlet />
-    </div>
-
+    <>
+      <div className={`app ${theme === 'dark' ? 'dark-theme' : ''}`}>
+        <Outlet />
+      </div>
+    </>
   )
 }
 
