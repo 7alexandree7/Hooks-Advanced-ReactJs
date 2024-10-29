@@ -39,5 +39,7 @@
  8 Eu criei um arquivo chamado data.js, contendo 2 constantes, com o valor de nome e routerPath, para renderizar
  de forma dinamica is items e junto com eles, inserindo automaticamente as rotas de cada item 
 
+ 9 precisei organizar o css para cada pagina centralizar corretamente 
+
 
 * (5) brakepoint do git, para commitar as informações
