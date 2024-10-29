@@ -34,5 +34,10 @@
 7 Adicionar um Componente Link do React Router Dom na aplicação no meu drawer, para cara Link desse,
  me redirecionar para a rota desejada
 
+ * (4) brakepoint do git, para commitar as informações
 
-* (4) brakepoint do git, para commitar as informações
+ 8 Eu criei um arquivo chamado data.js, contendo 2 constantes, com o valor de nome e routerPath, para renderizar
+ de forma dinamica is items e junto com eles, inserindo automaticamente as rotas de cada item 
+
+
+* (5) brakepoint do git, para commitar as informações
