@@ -1,0 +1,7 @@
+1 - Rodar npm vite@latest
+2- baixar as dependencias do NPM (gerenciador de pacotes do node.js)
+3 - Baixar as Lib pelo npm que serão usadas no app
+    .React-Router-dom
+    .Material-UI
+
+* (1) brakepoint do git, para commitar as informações
