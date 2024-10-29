@@ -29,3 +29,10 @@
 
 
 * (3) brakepoint do git, para commitar as informações
+
+
+7 Adicionar um Componente Link do React Router Dom na aplicação no meu drawer, para cara Link desse,
+ me redirecionar para a rota desejada
+
+
+* (4) brakepoint do git, para commitar as informações

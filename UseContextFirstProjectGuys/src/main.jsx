@@ -10,12 +10,14 @@ import SendEmail from './routes/SendEmail/SendEmail.jsx';
 import Spam from './routes/Spam/Spam.jsx';
 import Starred from './routes/Starred/Starred.jsx';
 import Trash from './routes/Trash/Trash.jsx';
+import Home from './routes/Home/Home.jsx';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
     children: [
+      {path: '/home', element: <Home/>},
       {path: '/allmail', element: <AllMail />},
       {path: '/drafts', element: <Drafts />},
       {path: '/inbox', element: <Inbox />},
