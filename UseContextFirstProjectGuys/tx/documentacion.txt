@@ -5,3 +5,15 @@
     .Material-UI
 
 * (1) brakepoint do git, para commitar as informações
+
+4 - Montar uma boa arquitetura
+    . Pagina de Componentes 
+    . Pagina para Rotas
+
+5 - Configuração base para receber as rotas e definições de estilo
+
+* (2) brakepoint do git, para commitar as informações
+
+6 - Inicio do Roteamento em React com react router dom 
+    . Configuar meu Main.jsx com as seguintes demandas
+      . Criar uma variavel com as rotas definidas
