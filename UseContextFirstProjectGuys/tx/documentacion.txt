@@ -43,3 +43,9 @@
 
 
 * (5) brakepoint do git, para commitar as informações
+
+10 - Criei o botão para mudar o background para cada componente
+
+11 - Criar uma classe com o tema light e dark
+
+12 - Criar um contexto para mudar o background
