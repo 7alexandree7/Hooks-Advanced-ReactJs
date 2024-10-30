@@ -1,42 +1,58 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+.content_LoginPage {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #daeef7;
+  flex-direction: column;
+  gap: 3rem;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.form-box {
+  background-color: #3088a4;
+  padding: 30px;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 12px;
+  color: #181818;
+  font-weight: 600;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+
+.box_input {
+  margin: 15px;
 }
 
-.card {
-  padding: 2em;
+
+button {
+  width: 200px;
+  border: none;
+  outline: none;
+  padding: 6px ;
+  border-radius: 6px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  cursor: pointer;
 }
 
-.read-the-docs {
-  color: #888;
+input {
+  width: 200px;
+  border: none;
+  outline: none;
+  padding: 4px ;
+  border-radius: 6px;
+  margin-top: 5px;
 }
