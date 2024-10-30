@@ -1,7 +1,7 @@
 import React from "react";
 import { useAuth } from "./AuthProvider";
 
-function loginPage() {
+function LoginPage() {
     const auth = useAuth()
 
 
@@ -18,4 +18,7 @@ function loginPage() {
         </div>
     );
 }
+
+
+export default LoginPage
 
