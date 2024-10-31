@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Outlet } from 'react-router-dom';
 import { AuthProvider } from './components/AuthProvider';
 import PrivateRoute from './components/PrivateRoute';
 import LoginPage from './components/LoginPage';
@@ -13,10 +13,10 @@ function App() {
 
   return (
     <AuthProvider>
+      <Outlet />
       <Router>
         <Routes>
         <Route path="/login" element={<LoginPage />} />
-
          {/* Rotas protegidas */}
          <Route path='/' element={<PrivateRoute> <HomePage/> </PrivateRoute>}/>
          <Route path='page1' element={<PrivateRoute> <Page1/> </PrivateRoute>}/>
