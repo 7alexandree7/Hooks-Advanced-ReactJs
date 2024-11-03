@@ -1,13 +1,11 @@
-function ChildrenTwo() {
+import { Button } from "@mui/material";
+import useAppContext from "../hook/useAppContext";
 
+export default function ChildrenTwo () {
+
+    const {setName} = useAppContext()
+    
     return (
-      <Box>
-        <Button sx={{ width: '190px' }} variant="contained" onClick={() => setName('UK Developer')}>
-          Mude o Nome
-        </Button>
-      </Box>
+        <Button onClick={() => setName('Uk Developer')} variant="contained">Change Name</Button>
     )
-  }
-
-
-export default ChildrenTwo
+}

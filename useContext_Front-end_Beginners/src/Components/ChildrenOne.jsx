@@ -1,8 +1,10 @@
-import React from 'react'
-import ChildrenTwo from './ChildrenTwo'
+import useAppContext from "../hook/useAppContext"
 
-const ChildrenOne = () => {
-  return <ChildrenTwo />
+export default function ChildrenOne() {
+    const { name, number } = useAppContext()
+    return (
+        <div>
+            {name} e numero: {number}
+        </div>
+    )
 }
-
-export default ChildrenOne
