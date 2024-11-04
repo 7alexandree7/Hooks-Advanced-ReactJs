@@ -1,35 +1,57 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useEffect, useState } from 'react'
 import './App.css'
 
+interface Irepository {
+  name: string;
+  id: number;
+}
+
 function App() {
-  const [count, setCount] = useState(0)
+
+  const [repository, setRepository] = useState<Irepository[]>([])
+  const [search, setSearch] = useState('')
+
+  useEffect(() => {
+    fetch('https://api.github.com/users/7alexandree7/repos')
+      .then(repo => repo.json())
+      .then(data => setRepository(data))
+  }, [])
+
+  const filteredRepository = search.length > 0 ?
+    repository.filter(repo => repo.name.includes(search)) :
+    [];
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <input
+        type="text"
+        name="Search"
+        id="Search"
+        value={search}
+        onChange={(e: any) => setSearch(e.target.value)} />
+
+
+      {search.length > 0 ? (
+        <ul>
+          {filteredRepository.map((item) => {
+            return (
+              <li key={item.id}>{item.name}</li>
+            )
+          })}
+        </ul>
+      ) : (
+        <ul>
+          {repository.map((item) => {
+            return (
+              <li key={item.id}>{item.name}</li>
+            )
+          })}
+        </ul>
+      )}
     </>
+
   )
 }
 
-export default App
+
+export default App 

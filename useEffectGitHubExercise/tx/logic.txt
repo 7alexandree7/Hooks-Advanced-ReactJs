@@ -1,0 +1,20 @@
+1 parte 
+
+ter um input  
+abaixo desse input ter um estado para exibir seus repositorios
+
+ter uma interface para meu state aonde vai o repositorio não filtrado
+
+
+esses repositorios vão vir de uma api do github, vc deve buscar ela atravez do fetch
+transformar em json, e setar o valor no seu estado, tudo issod entro de um useEffect
+
+
+
+2 parte
+
+adicionar uma nova lista, agora essa lista tem  q conter os repositorios filtrados
+conforme o usuario digitar, exibir apenas os filtrados
+
+criar um estado para armazenar oq for digitado pelo usuario
+adicionar um evento de onChange para capturar a digitação no input
